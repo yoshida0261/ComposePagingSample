@@ -24,17 +24,17 @@ plugins {
 }
 
 android {
-    namespace = "android.template"
+    namespace = "yoshida0261.compose.sample2022"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "android.template"
+        applicationId = "yoshida0261.compose.sample2022"
         minSdk = 21
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "android.template.HiltTestRunner"
+        testInstrumentationRunner = "yoshida0261.compose.sample2022.HiltTestRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -103,6 +103,12 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)
+
+    implementation(libs.okhttp3)
+    implementation(libs.okhttp3.interceptor)
+    implementation(libs.retrofit)
+    implementation(libs.kotlin.serialization)
+    implementation(libs.kotlinx.serialization.converter)
 
     // Compose
     implementation(libs.androidx.compose.ui)
