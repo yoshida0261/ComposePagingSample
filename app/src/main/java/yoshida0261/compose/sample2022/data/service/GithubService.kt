@@ -1,7 +1,7 @@
 package yoshida0261.compose.sample2022.data.service
 
 import yoshida0261.compose.sample2022.data.model.Contributers
-import okhttp3.Response
+import retrofit2.Response
 import retrofit2.http.GET
 
 interface GithubService {
